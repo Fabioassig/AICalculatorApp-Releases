@@ -1,0 +1,12 @@
+Manual GitHub release steps
+
+1. Open the repository Fabioassig/AICalculatorApp-Releases.
+2. Open Releases.
+3. Choose Draft a new release.
+4. Select or create tag v0.1.
+5. Use release title v0.1 - Initial release.
+6. Upload the JAR and ZIP files from the local package if required.
+7. Add the release notes from docs/release-v0.1.md.
+8. Publish the release.
+
+Note: the ChatGPT GitHub connector added source and release evidence files directly to the repository. The connector did not expose a direct GitHub Releases asset upload action in this chat, so binary release assets should be uploaded manually from the ZIP package if the GitHub Releases page needs downloadable assets.
