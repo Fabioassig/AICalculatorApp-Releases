@@ -1,12 +1,16 @@
 # AICalculatorApp Releases
 
-AICalculatorApp is a completed Java and Maven application used for deployment practice in a learner guide. It provides a small working application that can be built, packaged, tested outside the Development folder, and published as a versioned release artefact.
+This repository represents the production-style release and support location for the ICTPRG534 AICalculatorApp practical deployment workflow.
 
-## Current release
+It supports the learner guide activities from Chapter 1 to Chapter 8, including release folders, version comparison, website deployment practice, uninstall package practice, rollback practice and post-deployment support checks.
 
-Current training release: `v0.1`
+## Current training releases
 
-## Expected output
+- `v0.1` — first release package
+- `v0.2` — second release package with visible update output
+- `rollback-current` — previous working package copied for rollback practice
+
+## Expected v0.1 output
 
 ```text
 AI Calculator v0.1
@@ -16,26 +20,31 @@ AI Calculator v0.1
 20 / 4 = 5
 ```
 
-## Build command
-
-```bash
-mvn clean package
-```
-
-## Run packaged application
-
-```bash
-java -jar target/ai-calculator-1.0.jar
-```
-
-## Repository structure
+## Expected v0.2 output
 
 ```text
-source/AICalculatorApp/      Maven Java source project
-release/v0.1/               Release artefacts and release evidence
-github-release-details/      GitHub release title, description and manual release steps
+AI Calculator v0.2
+2 + 3 = 5
+10 - 4 = 6
+5 x 6 = 30
+20 / 4 = 5
+Release update: square calculation added
+4 squared = 16
 ```
 
-## Training purpose
+## Practical repository structure
 
-This repository represents the production-style release location for the AICalculatorApp practical deployment workflow.
+```text
+release/v0.1/                         First release artefact location
+release/v0.2/                         Second release artefact location
+release/rollback-current/             Rollback package location
+release/AICalculatorApp-v0.1.zip      First release ZIP package
+release/AICalculatorApp-v0.2.zip      Second release ZIP package
+website/                              Website deployment practice files
+uninstall/                            Uninstall scripts
+uninstall-deploy/v0.1/                Deployed uninstall package practice folder
+```
+
+## Training note
+
+Generated packages and ZIP artefacts are supplied for manual demonstration and learner evidence. The source project remains in the separate `AICalculatorApp-Source` repository.
